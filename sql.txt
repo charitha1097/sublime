@@ -1,0 +1,105 @@
+For product_category
+
+set SQL_SAFE_UPDATES=0;
+
+update product_category
+set category_name = 'Mobiles'
+where category_id=2147483641;
+
+update product_category
+set category_name = 'Smart Watches'
+where category_id=2147483645;
+
+update product_category
+set category_name = 'Laptops'
+where category_id=2147483642;
+
+update product_category
+set category_name = 'Cameras'
+where category_id=2147483644;
+
+
+update product_info
+set  product_description ='Xiaomi Pocophone F1 64GB + 6GB RAM, Dual Camera, 6.18" LTE Factory (Graphite Black) Color:BLACK',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/61ltnpIsyXL._AC_SL1500_.jpg',product_name = 'Xiaomi Pocophone F1',
+product_price = 25000, product_id = 'M0001'
+where product_id ='B0001';
+
+
+update product_info
+set  product_description ='Oneplus 7 Pro GM1913 256GB/8GB Dual Sim (GSM ONLY, NO CDMA) Factory Unlocked No Warranty (Nebula Blue)',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/71WH8eMTCML._AC_SL1500_.jpg',product_name = 'Oneplus 7 Pro',
+product_price = 30000, product_id = 'M0002'
+where product_id ='B0002';
+
+
+update product_info
+set  product_description ='Apple Iphone 11 (64GB), 6.1-Inch Liquid Retina HD LCD display, Water and dust resistant
+Dual-camera system',
+product_icon ='https://www.gdprices.co.uk/image/cache/catalog/iphone-11/purple/1-1200x1200.jpg',product_name = 'Apple Iphone 11',
+product_price = 45000, product_id = 'M0003'
+where product_id ='B0003';
+
+
+update product_info
+set  product_description ='Semoic GT105 1.22Inch Smartwatch Men Women Heart Rate Blood Pressure Monitor Smart Watch with Weather 
+Push Music Control Call Black',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/41sy7WSq4fL._AC_.jpg',product_name = 'Semoic GT105',
+product_price = 1000, product_id = 'S0001', category_type=1
+where product_id ='B0004';
+
+update product_info
+set  product_description ='FitFort Smart Watch for Android and iOS Phone 2019 Version IP68 Waterproof, Fitness Tracker Watch with Heart Rate Monitor,
+Pedometer, Sleep Monitor, Calorie...',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/71E4qeL-2EL._AC_SL1500_.jpg',product_name = 'FitFort Smart Watch',
+product_price = 1000, product_id = 'S0002', category_type=1
+where product_id ='B0005';
+
+update product_info
+set  product_description ='SBEN Smart Watch Smart Band Round Touch Screen IP68 Waterproof,
+Fitness Tracker with Heart Rate & Sleep Pedometer iOS/Android.',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/51hBdOvcpNL._AC_.jpg',product_name = 'SBEN Smart Watch',
+product_price = 900, product_id = 'S0003', category_type=1
+where product_id ='C0001';
+
+update product_info
+set  product_description ='Dell XPS 15 laptop 15.6", 4K UHD InfinityEdge Touch, 9th Gen Intel Core i7-9750H, 
+NVIDIA GeForce GTX 1650 4GB GDDR5, 1TB SSD storage, 16GB RAM,...',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/91WgL3IbNIL._AC_SL1500_.jpg',product_name = 'Dell XPS 15',
+product_price = 45000,  category_type=2
+where product_id = 'L0003';
+
+
+update product_info
+set  product_description ='HP Envy 13” Thin Laptop W/ Fingerprint Reader, FHD Touchscreen, 
+10th Gen Intel Core i7-10510U, 8GB SDRAM, 256GB Solid State Drive, Windows 10 Home',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/71qdolbMZML._AC_SL1500_.jpg',product_name = 'HP Envy 13”',
+product_price = 40000, product_id = 'L0002', category_type=2
+where product_id ='C0003';
+
+
+update product_info
+set  product_description ='Acer Aspire 5 A515-54-76TA 15.6" 
+Notebook - 1920 x 1080 - Core i7 i7-10510U - 12 GB RAM - 512 GB SSD - Black - Windows 10 Home 64-bit - Intel UHD',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/71HrWHRYUfL._AC_SL1000_.jpg',product_name = 'Acer Aspire 5',
+product_price = 35000, product_id = 'L0001', category_type=2
+where product_id ='D0001';
+select * from product_info;
+
+update product_info
+set  product_description ='Canon EOS 6D Mark II DSLR Camera with EF 24-105mm USM Lens - WiFi Enabled',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/81jgKehfhnL._AC_SL1500_.jpg',product_name = 'Canon EOS',
+product_price = 35000, product_id = 'C0001', category_type=2
+where product_id ='D0002';
+
+update product_info
+set  product_description ='Nikon 1 J5 Mirrorless Digital Camera Kit with 10-100mm Lens Full HD 1080p/60 Video',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/71IuW4Z%2BK2L._AC_SL1500_.jpg',product_name = 'Nikon 1 J5',
+product_price = 55000, product_id = 'C0002', category_type=2
+where product_id ='F0001';
+
+update product_info
+set  product_description ='Sony Cyber-Shot DSC-W800 Digital Camera, 20.1MP - Bundle with 16GB Class 10 SDHC Card, Cleaning Kit, Camera Case',
+product_icon ='https://images-na.ssl-images-amazon.com/images/I/51ZdiuiMymL._AC_.jpg',product_name = 'Sony Cyber-Shot',
+product_price = 25000, product_id = 'C0003', category_type=2
+where product_id ='F0002';
